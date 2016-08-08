@@ -1,0 +1,16 @@
+Logged in as: {{ current_user }}
+</br>
+</br>
+<form action="/users/list" method="post">
+	<select id="email" name="email">
+		{% for email in emails %}
+		<option value="{{ email }}">{{ email }}</option>
+		{% endfor %}
+	</select>
+	</br>
+	</br>
+	<input type="submit" value="Login">
+</form>
+<form action="/users/logout" method="post">
+		<input type="submit" value="Logout"/>
+</form>

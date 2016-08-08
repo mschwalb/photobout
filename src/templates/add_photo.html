@@ -1,0 +1,7 @@
+{% block Content %}
+<form action={{ upload_url }} method="post" enctype="multipart/form-data">
+	<input type="file" name="image" id="image">
+	<input type="text" name="bout_id" id="bout_id" placeholder="bout id">
+	<input type="submit" value="Submit">
+</form>
+{% endblock %}
